@@ -51,6 +51,7 @@ button {
     width: 15.5rem;
     font-size: medium;
     transition: all 0.3s;
+    letter-spacing: 2px;
 
 }
 
