@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Convertr</title>
-    <link href=" https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/css/gotham-rounded.min.css " rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-</head>
+    <link
+      href=" https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/css/gotham-rounded.min.css "
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>Currency Converter</h1>
-        <form>
-            <div>
-                <select class="currency">
-                    <option></option>
-                </select>
-                <select class="currency">
-                    <option></option>
-                </select>
-            </div>
-            <div>
-                <input type="number" class="input-currency">
-                <input type="number" class="output-currency">
-            </div>
-            <button>CONVERT</button>
-        </form>
+      <h1>Currency Converter</h1>
+      <form>
+        <div>
+          <select class="currency">
+            <option>USD</option>
+          </select>
+          <select class="currency">
+            <option>EUR</option>
+          </select>
+        </div>
+        <div>
+          <input type="number" value="0" min="0" class="input-currency" />
+          <input type="number" value="0" min="0" class="output-currency" />
+        </div>
+        <button>CONVERT</button>
+      </form>
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

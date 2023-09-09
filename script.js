@@ -3,12 +3,18 @@ const inputCurrency = document.querySelector(".input-currency");
 const outputCurrency = document.querySelector(".output-currency");
 const buttonConvert = document.querySelector("button");
 
+inputCurrency.addEventListener("change", (e) => {
+  console.log(e.target.value);
+  if (e.target.value < 0) {
+    e.target.value = 0;
+  }
+});
+
 fetch(`https://api.frankfurter.app/currencies`)
   .then((data) => data.json())
   .then((data) => {
     const entries = Object.entries(data);
     for (const e of entries) {
-      console.log(e[0]);
       selectCurrency[0].innerHTML += ` <option value= '${e[0]}'>${e[0]}</option>`;
       selectCurrency[1].innerHTML += ` <option value='${e[0]}'>${e[0]}</option>`;
     }
